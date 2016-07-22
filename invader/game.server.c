@@ -102,7 +102,7 @@ void *InputThread(void *arg)
 					xpos += 1;
 					break;
 
-///*		
+/*		
  				case 'j':
 					for(int i=0;i<sizeof(gMissileObject)/sizeof(_S_BULLET_OBJECT);i++) {
 						double vx,vy,c;
@@ -120,7 +120,7 @@ void *InputThread(void *arg)
 					}
 	
 					break;
-//*/			
+*/			
 			}
 
 			_S_PACKET_REQ_SETPOS packet_setpos = {
@@ -278,7 +278,7 @@ int main(int argc,char *argv[])
 				puts("bye~ \r");
 			}
 
-///*	
+/*	
  			else if(ch == 'j') {
 
 				for(int i=0;i<sizeof(gMissileObject)/sizeof(_S_BULLET_OBJECT);i++) {
@@ -301,10 +301,10 @@ int main(int argc,char *argv[])
 			for(int i=0;i<2;i++) {
 				gPlayerObject[i].pfApply(&gPlayerObject[i],delta_tick,ch);	
 			}
-//*/
+*/
 
 		}
-
+/*
 		for(int i=0;i<sizeof(gMissileObject)/sizeof(_S_BULLET_OBJECT);i++) {
 			_S_BULLET_OBJECT *pObj = &gMissileObject[i];
 			pObj->pfApply(pObj,delta_tick);
@@ -368,7 +368,7 @@ int main(int argc,char *argv[])
 				}
 			}
 		}
-
+*/
 		for(int i=0;i<4;i++) {
 			if(gMissileObject[i].m_nFSM != 0) {
 				double bullet_pos_x = gMissileObject[i].m_fXpos;
